@@ -1,0 +1,410 @@
+@font-face {
+    font-family: "Anton";
+    src: url(/font/Anton-Regular.ttf);
+}
+*,
+*::before,
+*::after{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background: url(/ing/pexels-photo-8411602.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white; 
+  
+}
+.navbar{
+     position: fixed; 
+    top: 0px;
+    background-color:rgba(0, 0, 0, 0.376);
+    backdrop-filter: blur(10px); 
+    width: 100vw;
+    margin-top: 0px;
+    z-index: 2;
+    
+    
+}
+.nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px;
+    margin-bottom: 0px;
+    width: 100%;
+    
+    
+    
+}
+.nav h1{
+    font-family: "Anton";
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-left: 2rem;
+    
+
+}
+#search{
+    background-color:rgba(0, 0, 0, 0.197);
+    backdrop-filter: blur(10px); 
+    border: 1px solid white;
+    height: 1rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+}
+
+
+.nav ul{
+    display: flex;
+}
+li{
+    list-style-type: none;
+    margin-right: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    border-bottom: 1px solid white;
+}
+
+/* ..................................END OF NAV BAR...................... */
+
+
+
+/* ..................................BEGINING OF SHOWCASE...................... */
+.container-s{
+    overflow: hidden;
+    width: 100vw;
+    padding: 2rem;
+    background-color:rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    
+    
+}
+
+.showcase{
+    display: flex;
+    justify-content: CENTER;
+    align-items: center;
+    padding-top: 2rem;
+    
+}
+.showcase h1{
+    font-family: anton;
+    font-weight: 200;
+    font-size: 120px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 120px;
+}
+.title{
+    text-align: center;
+    width: 500px;
+    padding-top: 4rem;
+    animation: fade 3s  cubic-bezier(0.25, 0.1, 0.96, 0.42);
+    animation-fill-mode: both;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity:1;
+
+    }
+    
+}
+
+/* ..........................end of showcase........................... */
+
+
+/* ..........................begin layer 2........................... */
+
+.container3{
+    background: #000;
+    width: 100vw;
+    height: 500px;
+    background-attachment: fixed;
+
+}
+.layer2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+    height: 100%;
+}
+.container3:before{
+    transform: translateZ(-1px) scale(2);
+}
+
+.show-pix{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 2rem;
+    padding: 2rem;
+    grid-gap: 10px;
+}
+
+.cardano {
+    width: 180px;
+    height: 100%;
+
+}
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(140, 136, 136);
+     transform-style: preserve-3d;
+    transition: all 1s ease ;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    position: absolute;
+    background:url(/ing/pexels-photo-4404522.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+.back{
+    position: absolute;
+    background-color: rgb(35, 29, 29);
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+
+}
+.card2{
+    background-image: url(/ing/pexels-photo-8411602.jpeg);
+}
+.card3{
+    background-image: url(/ing/pexels-photo-2170387.jpeg);
+}
+.card4{
+    background-image: url(/ing/pexels-photo-949670.jpeg);
+}
+ 
+ button{
+    height: 1.8rem;
+    width: 9rem;
+    border-radius: 1rem;
+    background:rgb(172, 4, 4);
+    color: white;
+    border: none;
+    margin: 3px;
+    transition: all 300ms ease;
+ }
+ button:hover{
+    background-color:rgb(236, 74, 74);
+ }
+ button:active{
+    transform: scale(1.1);
+ }
+ .back{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
+.back p{
+    margin: 10px;
+    margin-bottom: 6px; ;
+    text-align: center;
+ }
+ .c3-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3rem;
+    padding: 4rem;
+    font-family: 'arial',serif;
+    
+}
+.c3-text h2{
+    font-weight: 200;
+    font-size: 3rem;
+    margin: 5px;
+    
+}
+.c3-text p{
+    font-weight: 1o0;
+}
+/* ..........................section 3....................... */
+.container4{
+    height: 900px;
+    width: 100vw;
+    
+}
+.afr-intro{
+    width: 100vw;
+    height: 100%;
+    background:linear-gradient(rgb(6, 0, 0), rgba(228, 144, 8, 0.897));
+    padding-top: 6rem;
+    
+    
+}
+.afr-text{
+    font-family: 'arial',serif;
+    align-self: center;
+    margin-left: 2rem;
+
+}
+.afr-content{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.dark{
+    align-self: start;
+    margin-left: 0px;
+    margin-right: 2rem;
+    
+
+}
+.afr-img{
+    background-image: url(/ing/pngwing.com.png);
+    background-size: cover;
+    background-position: center;
+}
+.afr-text h2{
+    font-weight: 200;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    
+}
+/* 
+...................aRTIIFCACT................ */
+.container-5{
+    width: 100vw;
+    height: 500px;
+    background-image: url(/ing/pexels-photo-2119484.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.artiFact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.artiFact h1{
+    font-family: 'arial',serif;
+    font-size: 200px;
+    text-align: center;
+    font-weight: 100;
+    padding: 6px;
+    
+
+}
+/* .............art images........ */
+.container-6{
+    width: 100vw;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 -1px 15px black;
+    z-index: 2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 2rfe;
+   
+}
+.container-6::before{
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 -1px 10px black;
+}
+.art-img{
+    animation: shake 13s linear infinite;
+    animation-fill-mode: both;
+    margin: 2rem;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(-200px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-200px);
+    }
+    
+}
+.img{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    
+    
+
+}
+.imgs1{
+    background-image: url(/ing/pngwing.com\ \(5\).png);
+
+}
+#art{
+        background-size: cover;
+        background-position: center;
+        height: 390px;
+        width: 200px;
+        margin: 1rem;
+}
+.imgs2{
+    background-image: url(/ing/pngwing.com\ \(6\).png);
+}
+.imgs3{
+    background-image: url(/ing/pngwing.com\ \(8\).png);
+}
+.imgs4{
+    background-image: url(/ing/pngwing.com\ \(4\).png);
+}
+.imgs5{
+    background-image: url(/ing/pngwing.com\ \(2\).png);
+}
+.imgs6{
+    background-image: url(/ing/pngwing.com\ \(3\).png);
+}
+
+
+
+
+ 
